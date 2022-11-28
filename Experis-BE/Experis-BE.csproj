@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Experis_BE</RootNamespace>
+    <UserSecretsId>54aacf12-bba2-4573-89fe-86a272c57137</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Experis-BE-Application\Experis-BE-Application.csproj" />
+    <ProjectReference Include="..\Experis-BE-Domain\Experis-BE-Domain.csproj" />
+    <ProjectReference Include="..\Experis-BE-Infrastructure\Experis-BE-Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
